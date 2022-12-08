@@ -1,97 +1,94 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: 0;
-    transition: all 0.5s ease;
-}
-
 body {
-    font-family: sans-serif;
-    background-color: indigo;
+    background: #333 url(img/food8.jpeg) center center no-repeat;
+    background-size: cover;
+    color:#532827;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
+#container{
+    width: 400px;
+    margin: 40px auto 0;
+    padding: 50px;
+    box-sizing: border-box;
+    background: url(img/paper-pattern.jpg)top left repeat;
+    box-shadow: 0 10px 15px -8px #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.container {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
+h1{
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    border-bottom: solid 1px #ddd;
+    
 }
 
-.calculator {
-    position: relative;
-    width: auto;
-    height: auto;
-    box-shadow: 0 0 30px #000;
-    padding: 20px;
+form{
+    text-align: left;
 }
 
-.theme-toggler {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    color: #fff;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.theme-toggler.active {
-    color: #333;
-}
-
-.theme-toggler.active::before {
-    background-color: #fff;
-}
-
-.theme-toggler::before {
-    content: '';
-    height: 30px;
-    width: 30px;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background-color: #333;
-    z-index: -1;
-}
-
-#display {
-    height: 150px;
-    width: auto;
-    max-width: 270px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 30px;
-    margin-bottom: 20px;
-    overflow-x: scroll;
-}
-
-#display::-webkit-scrollbar {
+form label{
     display: block;
-    height: 10px;
+    margin:25px 0;
+    font-weight: bold;
 }
 
-button {
-    height: 60px;
-    width: 60px;
-    border: 0;
-    border-radius: 30px;
-    margin: 5px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 200ms ease;
+form input,
+form select{
+    padding: 8px;
+    margin: 10px 0;
 }
 
-button:hover {
-    transform: scale(1.1);
+form input[type="text"]{
+    width: 90px;
 }
 
-button#zero {
-    width: 130px;
+button{
+    background: #6c2726;
+    color: white;
+    border-bottom:solid 4px #222;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 30px;
+    width: 100%;
+}
+
+bottom:hover{
+    background:#4c2827;
+    border-bottom-color: #111;
+}
+
+button:active{
+
+    position: relative;
+    top: 3px;
+}
+
+#totalTip{
+
+    font-size: 50px;
+    margin-top: 40px;
+}
+
+#totalTip:before{
+
+    content: "Tip amount";
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#totalTip sup{
+
+   font-size: 24px;
+   top: -18px;
+}
+
+#totalTip small{
+
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
 }
