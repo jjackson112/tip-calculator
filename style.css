@@ -1,7 +1,7 @@
 body {
-    background: #333 url(img/food8.jpeg) center center no-repeat;
+    background: ivory url(img/food8.jpeg) center center no-repeat;
     background-size: cover;
-    color:#532827;
+    color: peru;
 }
 
 #container{
@@ -9,7 +9,6 @@ body {
     margin: 40px auto 0;
     padding: 50px;
     box-sizing: border-box;
-    background: url(img/paper-pattern.jpg)top left repeat;
     box-shadow: 0 10px 15px -8px #000;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -17,25 +16,25 @@ body {
     text-align: center;
 }
 
-h1{
+h1 {
     margin: 0 0 20px;
     padding: 0 0 20px;
     border-bottom: solid 1px #ddd;
-    
 }
 
-form{
+form {
     text-align: left;
 }
 
-form label{
+form label {
     display: block;
-    margin:25px 0;
+    margin: 25px 0;
     font-weight: bold;
+    font-size: 20px;
 }
 
 form input,
-form select{
+form select {
     padding: 8px;
     margin: 10px 0;
 }
@@ -45,11 +44,12 @@ form input[type="text"]{
 }
 
 button{
-    background: #6c2726;
-    color: white;
-    border-bottom:solid 4px #222;
+    background: navajowhite;
+    color: peru;
+    border-bottom:4px solid #222;
     text-transform: uppercase;
     font-size: 18px;
+    font-weight: 600;
     padding: 20px 30px;
     width: 100%;
 }
